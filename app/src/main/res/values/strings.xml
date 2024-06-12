@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RedeMaisSocial</string>
+    <string name="bemvindo">Bem-vindo (a)!</string>
+    <string name="frase_inicial">A vida é mais significativa quando vivemos para servir aos outros.</string>
+    <string name="redemaissocial">REDE+SOCIAL</string>
+    <string name="login">LOGIN</string>
+    <string name="cadastre_se">CADASTRE-SE</string>
+    <string name="insira_email">Insira seu e-mail</string>
+    <string name="digite_senha">Digite sua senha</string>
+    <string name="entrar">ENTRAR</string>
+</resources>
