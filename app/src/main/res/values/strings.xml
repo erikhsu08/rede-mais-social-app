@@ -4,8 +4,12 @@
     <string name="frase_inicial">A vida é mais significativa quando vivemos para servir aos outros.</string>
     <string name="redemaissocial">REDE+SOCIAL</string>
     <string name="login">LOGIN</string>
-    <string name="cadastre_se">CADASTRE-SE</string>
+    <string name="cadastre_se_maiuscula">CADASTRE-SE</string>
+    <string name="cadastre_se">Cadastre-se</string>
     <string name="insira_email">Insira seu e-mail</string>
     <string name="digite_senha">Digite sua senha</string>
     <string name="entrar">ENTRAR</string>
+    <string name="n_tem_conta">Não tem uma conta?</string>
+    <string name="criar_conta_de">CRIAR CONTA DE</string>
+
 </resources>

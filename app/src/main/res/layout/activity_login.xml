@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,45 +15,71 @@
     tools:context=".LoginActivity">
 
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/textLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/login"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
 
     <ImageView
         android:id="@+id/pessoas_login"
         android:layout_width="309dp"
         android:layout_height="294dp"
         android:src="@drawable/pessoas_login"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="111dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.104" />
 
     <EditText
         android:id="@+id/edit_email"
         style="@style/Edit_Text"
         android:layout_marginTop="20dp"
         android:drawableEnd="@drawable/ic_email"
-        android:hint="@string/insira_email"
         android:fontFamily="@font/poppins"
+        android:hint="@string/insira_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/pessoas_login"
         app:layout_constraintStart_toStartOf="@id/pessoas_login"
-        app:layout_constraintTop_toBottomOf="@id/pessoas_login" />
+        app:layout_constraintTop_toBottomOf="@id/pessoas_login"
+        app:layout_constraintVertical_bias="0.063" />
 
     <EditText
         android:id="@+id/edit_senha"
         style="@style/Edit_Text"
         android:layout_marginTop="44dp"
         android:drawableEnd="@drawable/ic_eye"
-        android:hint="@string/digite_senha"
         android:fontFamily="@font/poppins"
+        android:hint="@string/digite_senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/pessoas_login"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/pessoas_login"
-        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botao_login"
@@ -55,9 +88,40 @@
         android:fontFamily="@font/poppins"
         android:text="@string/entrar"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/pessoas_login"
         app:layout_constraintStart_toStartOf="@id/pessoas_login"
-        app:layout_constraintTop_toBottomOf="@id/edit_senha" />
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/n_tem_conta_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/n_tem_conta"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cadastre_se_txtview"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao_login"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/cadastre_se_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/cadastre_se"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao_login"
+        app:layout_constraintVertical_bias="0.053" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
