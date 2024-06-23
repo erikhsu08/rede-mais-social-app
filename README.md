@@ -1,1 +1,1 @@
-# rede-mais-social-app
+# Rede + Social
